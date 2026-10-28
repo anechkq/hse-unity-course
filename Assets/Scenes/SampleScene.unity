@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 1215590375}
   - component: {fileID: 1215590376}
   - component: {fileID: 1215590377}
+  - component: {fileID: 1215590378}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -764,7 +765,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215590363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00562d96392082d49ac6cee514cb89a7, type: 3}
   m_Name: 
@@ -785,6 +786,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HintOnce
   hintPanel: {fileID: 1348404268}
   shows: 0
+--- !u!114 &1215590378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215590363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d0bbfc978bd694d972708d6a22248e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControllerState
+  indicator: {fileID: 1215590366}
+  mode: 2
 --- !u!1 &1348404268
 GameObject:
   m_ObjectHideFlags: 0
