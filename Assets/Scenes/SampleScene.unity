@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &86604171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 86604172}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &86604172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86604171}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +588,7 @@ GameObject:
   - component: {fileID: 1215590376}
   - component: {fileID: 1215590377}
   - component: {fileID: 1215590378}
+  - component: {fileID: 1215590379}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -800,6 +832,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControllerState
   indicator: {fileID: 1215590366}
   mode: 2
+--- !u!114 &1215590379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215590363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00652f186205564409eb2507948d9984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceZone
+  user: {fileID: 1215590368}
+  target: {fileID: 86604172}
 --- !u!1 &1348404268
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,3 +1010,4 @@ SceneRoots:
   - {fileID: 1215590368}
   - {fileID: 1066086303}
   - {fileID: 2080327076}
+  - {fileID: 86604172}
